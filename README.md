@@ -1,3 +1,4 @@
 # HadoopTurfCount
+This is a haddop project. It was ran and tested in a hadoop cluster. All the coding is done in python.
 
 In this project, the data is the list of stadiums and their details. A .csv file was provided which contained the stadium data- name of the stadiums, capacity of each stadium, turf type and so on. The task is to find how many stadiums have artificial turf. The mapper takes the .csv file as input and sorts the data based on the variable "turf". Here, turf can have two possible values-TRUE, or FALSE. Based on these two values the sorting is done. The reducer then counts how many stadiums have the turf value TRUE assigned to it. That is the number of stadiums that have artificial turf. Finally, the reducer prints its output in an output folder. All the codes are tested and run in the hadoop cluster.
